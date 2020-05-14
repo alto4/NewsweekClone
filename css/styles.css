@@ -17,6 +17,22 @@ body {
     width: 100%;
 }
 
+.card {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.newsweek-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+}
+
 .main-header {
     background-color: #F72210;
     width: 100%;
