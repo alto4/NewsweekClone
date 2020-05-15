@@ -40,7 +40,7 @@ body {
   justify-content: center;
 }
 
-.btn-subscribe {
+.btn-red {
   color: #ff0500;
   background-color: #fff;
   padding: 0.3rem 0;
@@ -77,6 +77,7 @@ body {
   color: #888;
   font-size: 0.9rem;
   text-transform: uppercase;
+  padding: 1rem 0;
 }
 
 .author-img {
@@ -115,6 +116,11 @@ body {
   font-size: 0.9rem;
 }
 
+.more-stories img {
+  height: 85px;
+  width: 85px;
+}
+
 .footer img {
   width: 280px;
   padding: 1rem;
@@ -126,6 +132,35 @@ body {
   margin-right: 1rem;
 }
 
+.card-title {
+  line-height: 1.1;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.top-story .card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  line-height: 1.2;
+}
+
+.heros .card-title,
+.culture .card-title {
+  color: #888;
+  font-size: 1rem;
+  padding: 0.7rem 0 0;
+  font-weight: 600;
+}
+
+.opinion .card-title {
+  padding: 0.5rem 0 0;
+}
+.opinion .card-text {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
 .bold {
   font-weight: 700;
 }
@@ -144,4 +179,40 @@ body {
 
 .footer-bottom ul {
   list-style-type: none;
+}
+
+.footer {
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .more-stories img {
+    height: 65px;
+    width: 65px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 770px) {
+  #right-column {
+    display: none;
+  }
+
+  .more-stories .card {
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .more-stories {
+    display: none;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .right-column {
+    display: none;
+  }
 }
