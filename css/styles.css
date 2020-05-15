@@ -1,103 +1,147 @@
 body {
-    background-color: #eee;
-
+  background-color: #eee;
 }
 
 .container-fluid {
-    width: 82%;
-    background: #fff;
-    margin-top: 0;
+  max-width: 1300px;
+  background: #fff;
+  margin-top: 0;
 }
 
 .container-fluid.top-container {
-    padding: 0;
+  padding: 0;
 }
 
 .logo {
-    width: 100%;
+  width: 100%;
 }
 
 .card {
-    border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .newsweek-icon {
-    width: 2rem;
-    height: 2rem;
-    margin-right: .5rem;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
 }
 
 .main-header {
-    background-color: #F72210;
-    width: 100%;
+  background-color: #ff0500;
+  width: 100%;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-subscribe {
+  color: #ff0500;
+  background-color: #fff;
+  padding: 0.3rem 0;
+}
+.weather,
+.date {
+  color: #fff;
+  margin-bottom: 0.7rem;
 }
 
 .navbar {
-    list-style-type: none;
-    background-color: #fff;
-    margin: 0;
+  list-style-type: none;
+  background-color: #fff;
+  margin: 0;
 }
 
 .navbar li a {
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: 600;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .navbar .searchbar {
-    align-items: center;
+  align-items: center;
 }
 
 .navbar .searchbar input {
-    width: 70px;
-    padding: .2rem;
-    border: none;
+  width: 70px;
+  padding: 0.2rem;
+  border: none;
 }
 
 .section-title {
-    color: #888;
-    font-size: .9rem;
-    text-transform: uppercase;
+  color: #888;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 .author-img {
-    width: 4.5rem;
+  width: 4.5rem;
 }
 
 .opinion .author {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .opinion .card-title,
 .debate .card-title,
 .latest-news .card-title {
-    font-size: 1rem;
-    font-weight: 700;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .debate-square-img,
 .latest-news-img {
-    width: 95px;
-    height: 95px;
-    border-radius: 0;
+  width: 95px;
+  height: 95px;
+  border-radius: 0;
 }
 
 .heros .card img,
 .culture .card img {
-    width: 100%;
+  width: 100%;
 }
 
 .more-stories .article-title {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .more-stories .article-description {
-    line-height: 1.4;
-    font-size: .9rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.footer img {
+  width: 280px;
+  padding: 1rem;
+}
+
+.social-media-links {
+  list-style-type: none;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.social-link,
+.footer-bottom li {
+  padding: 0 0.5rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.footer-bottom ul {
+  list-style-type: none;
 }

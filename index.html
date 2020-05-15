@@ -1,756 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Newsweek Clone</title>
-  </head>
 
-  <body>
-    <div class="container-fluid top-container">
-      <!-- Navigation Bar -->
-      <header class="py-3 main-header">
-        <div class="row d-flex justify-content-between align-items-end">
-          <div class="col-4">
-            <div class="weather">
-              <i class="fa fa-cloud fa-lg"></i>10 &deg; Toronto, CA &gt;
-            </div>
-            <div class="date">Thu, May 14, 2020</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Newsweek Clone</title>
+</head>
+
+<body>
+  <div class="container-fluid top-container">
+    <!-- Navigation Bar -->
+    <header class="py-0 px-2 main-header">
+      <div class="row d-flex justify-content-between align-items-end">
+        <div class="col-4">
+          <div class="weather">
+            <i class="fa fa-cloud fa-lg"></i>10 &deg; Toronto, CA &gt;
           </div>
-          <div class="col-4">
-            <img src="images/logo.png" class="logo" alt="Newsweek logo." />
-          </div>
-          <div class="col-4 d-flex justify-content-end">
-            <button class="btn btn-login">Login</button>
-            <button class="btn-btn-subscribe">Subscribe &gt;</button>
-          </div>
+          <div class="date">Thu, May 14, 2020</div>
         </div>
-      </header>
+        <div class="col-4">
+          <img src="images/logo.png" class="logo" alt="Newsweek logo." />
+        </div>
+        <div class="col-4 d-flex justify-content-end pb-3">
+          <button class="btn btn-login text-white bold uppercase px-4 py-0">Login</button>
+          <button class="btn btn-outline-light btn-subscribe bold uppercase px-2 py-0">Subscribe &gt;</button>
+        </div>
+      </div>
+    </header>
 
-      <ul
-        class="navbar border-bottom row d-flex justify-content-between align-items-center"
-      >
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">U.S.</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">World</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">Business</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">Tech & Science</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">Culture</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">Newsgeek</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">Sports</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">Health</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">The Debate</a>
-        </li>
-        <li class="nav-item border-right">
-          <a href="#" class="nav-link">Vantage</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Weather</a>
-        </li>
-        <li class="searchbar d-flex">
-          <input class="form-control" type="search" placeholder="Search" />
-          <i class="fa fa-search fa-lg"></i>
-        </li>
-      </ul>
-    </div>
-    <div class="container-fluid">
-      <main>
-        <div class="row center">
-          <!-- Featured Stories Section -->
-          <section class="col featured-stories p-4">
-            <h2 class="section-title">Featured Stories</h2>
-            <div class="card">
-              <img
-                src="images/china-covid-lawsuits.webp"
-                alt=""
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Chinese Media Predicts Retaliation Against GOP Lawmakers Who
-                  Sued Beijing
-                </h5>
-                <p class="card-text">
-                  China has condemned legislation proposed and lawsuits filed
-                  against Beijing seeking damages for the deaths and economic
-                  distress caused by the coronavirus pandemic.
-                </p>
-              </div>
+    <ul class="navbar border-bottom row d-flex justify-content-between align-items-center">
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">U.S.</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">World</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">Business</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">Tech & Science</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">Culture</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">Newsgeek</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">Sports</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">Health</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">The Debate</a>
+      </li>
+      <li class="nav-item border-right">
+        <a href="#" class="nav-link">Vantage</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Weather</a>
+      </li>
+      <li class="searchbar d-flex">
+        <input class="form-control" type="search" placeholder="Search" />
+        <i class="fa fa-search fa-lg"></i>
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid">
+    <main>
+      <div class="row center">
+        <!-- Featured Stories Section -->
+        <section class="col-md-5 col-lg featured-stories">
+          <h2 class="section-title px-2 pt-2 pb-0">Featured Stories</h2>
+          <div class="card p-2 pl-3">
+            <img src="images/china-covid-lawsuits.webp" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-1">
+              <h5 class="card-title">
+                Chinese Media Predicts Retaliation Against GOP Lawmakers Who
+                Sued Beijing
+              </h5>
+              <p class="card-text">
+                China has condemned legislation proposed and lawsuits filed
+                against Beijing seeking damages for the deaths and economic
+                distress caused by the coronavirus pandemic.
+              </p>
             </div>
-            <div class="card">
-              <img src="images/russia-covid.webp" alt="" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Russia Accuses Media of False Coronavirus Death Numbers Sued
-                  Beijing
-                </h5>
-                <p class="card-text">
-                  Foreign ministry spokeswoman Maria Zakharova denies the higher
-                  death rate statistics cited by the publications.
-                </p>
-              </div>
+          </div>
+          <div class="card p-2 pl-3">
+            <img src="images/russia-covid.webp" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-1">
+              <h5 class="card-title">
+                Russia Accuses Media of False Coronavirus Death Numbers Sued
+                Beijing
+              </h5>
+              <p class="card-text">
+                Foreign ministry spokeswoman Maria Zakharova denies the higher
+                death rate statistics cited by the publications.
+              </p>
             </div>
-            <div class="card">
-              <img
-                src="images/ahmaud-arbery.webp"
-                alt=""
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Ahmaud Arbery Murder Suspect Worked 8 Years With No Arrest
-                  Powers
-                </h5>
-                <p class="card-text">
-                  It is unclear if McMichael arrested anyone between 2006 and
-                  2014 despite not having completed enough training to do so.
-                </p>
-              </div>
+          </div>
+          <div class="card p-2 pl-3">
+            <img src="images/ahmaud-arbery.webp" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-1">
+              <h5 class="card-title">
+                Ahmaud Arbery Murder Suspect Worked 8 Years With No Arrest
+                Powers
+              </h5>
+              <p class="card-text">
+                It is unclear if McMichael arrested anyone between 2006 and
+                2014 despite not having completed enough training to do so.
+              </p>
             </div>
-            <div class="card">
-              <img
-                src="images/jerome-powell.webp"
-                alt=""
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Fed Chief Warns Coronavirus Could Permanently Harm Economy
-                  Without More Aid
-                </h5>
-                <p class="card-text">
-                  "Additional fiscal support could be costly," Powell continued,
-                  "but worth it if it helps avoid long-term economic damage and
-                  leaves us with a stronger recovery."
-                </p>
-              </div>
+          </div>
+          <div class="card p-2 pl-3">
+            <img src="images/jerome-powell.webp" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-1">
+              <h5 class="card-title">
+                Fed Chief Warns Coronavirus Could Permanently Harm Economy
+                Without More Aid
+              </h5>
+              <p class="card-text">
+                "Additional fiscal support could be costly," Powell continued,
+                "but worth it if it helps avoid long-term economic damage and
+                leaves us with a stronger recovery."
+              </p>
             </div>
-            <div class="card">
-              <img
-                src="images/vote-california.webp"
-                alt=""
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  GOP Picks Up Katie Hill's Former California Seat, in Upset for
-                  Democrats
-                </h5>
-                <p class="card-text">
-                  Republicans pulled off an upset in Democratic-leaning
-                  California's 25th district in a tight race that became a
-                  flashpoint over voting centers and drew President Donald
-                  Trump's attention.
-                </p>
-              </div>
+          </div>
+          <div class="card p-2 pl-3">
+            <img src="images/vote-california.webp" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-1">
+              <h5 class="card-title">
+                GOP Picks Up Katie Hill's Former California Seat, in Upset for
+                Democrats
+              </h5>
+              <p class="card-text">
+                Republicans pulled off an upset in Democratic-leaning
+                California's 25th district in a tight race that became a
+                flashpoint over voting centers and drew President Donald
+                Trump's attention.
+              </p>
             </div>
-            <div class="card">
-              <img src="images/perfect-storm.JPG" alt="" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Weathering the Perfect Storm
-                </h5>
-                <p class="card-text">
-                  COVID-19 is not our only enemy. While the world confronts a
-                  pandemic, our critical infrastructure is vulnerable to
-                  cyberattack. Read this new report on where the weak points are
-                  and how to strengthen defenses against terrorists and
-                  cyber-criminals.
-                </p>
-              </div>
+          </div>
+          <div class="card p-2 pl-3">
+            <img src="images/perfect-storm.JPG" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-1">
+              <h5 class="card-title">
+                Weathering the Perfect Storm
+              </h5>
+              <p class="card-text">
+                COVID-19 is not our only enemy. While the world confronts a
+                pandemic, our critical infrastructure is vulnerable to
+                cyberattack. Read this new report on where the weak points are
+                and how to strengthen defenses against terrorists and
+                cyber-criminals.
+              </p>
             </div>
-            <div class="card">
-              <img
-                src="images/best-hospitals.JPG"
-                alt=""
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  World's Best Hospitals 2020
-                </h5>
-                <p class="card-text">
-                  Newsweek partnered with Statista Inc. to rank the leading
-                  hospitals in 21 countries
-                </p>
-              </div>
+          </div>
+          <div class="card p-2 pl-3">
+            <img src="images/best-hospitals.JPG" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-1">
+              <h5 class="card-title">
+                World's Best Hospitals 2020
+              </h5>
+              <p class="card-text">
+                Newsweek partnered with Statista Inc. to rank the leading
+                hospitals in 21 countries
+              </p>
             </div>
-            <div class="card">
-              <img
-                src="images/noteworthy-schools-2020.webp"
-                alt=""
-                class="card-img-top"
-              />
-              <div class="card-body">
+          </div>
+          <div class="card p-2 pl-3">
+            <img src="images/noteworthy-schools-2020.webp" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-1">
+              <h5 class="card-title">
+                What is an IB Private Education and Why is it so Important?
+              </h5>
+              <p class="card-text">
+                The aim of the IB is to offer the best possible international
+                education for students of all backgrounds and from every part
+                of the world. Find out more.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Center Column -->
+        <div class="center-container col-md-7 col-lg-5 featured-stories p-0">
+          <!-- Top Story Section -->
+          <section class="featured-stories">
+            <h2 class="section-title px-2 pt-2 pb-0">Top Story</h2>
+            <div class="card p-2">
+              <img src="images/wisconsin-gov-tony-evers.webp" alt="" class="card-img-top" />
+              <div class="card-body px-0 py-1">
                 <h5 class="card-title">
-                  What is an IB Private Education and Why is it so Important?
+                  Wisconsin Governor Says State Is 'Wild West' After
+                  Stay-at-Home Order Ruling
                 </h5>
                 <p class="card-text">
-                  The aim of the IB is to offer the best possible international
-                  education for students of all backgrounds and from every part
-                  of the world. Find out more.
+                  Tony Evers said Wisconsin had been thrown into "chaos" by
+                  four judges as coronavirus lockdown restrictions no longer
+                  applied in the state.
                 </p>
               </div>
             </div>
           </section>
+          <!-- Heros of the Pandemic Section -->
+          <section class="heros">
+            <h2 class="section-title px-2 pt-2 pb-0">Heroes of the Pandemic</h2>
+            <div class="row">
+              <div class="card col-md-4">
+                <img src="images/hero-1.webp" alt="" />
+                <h5 class="card-title">
+                  Organizer Helps Rebuild New York's Filipino Community Hit by
+                  COVID-19
+                </h5>
+              </div>
+              <div class="card col-md-4">
+                <img src="images/hero-2.webp" alt="" />
+                <h5 class="card-title">
+                  Tennessee Group Makes Coronavirus Face Masks for Local,
+                  International Use
+                </h5>
+              </div>
+              <div class="card col-md-4">
+                <img src="images/hero-3.webp" alt="" />
+                <h5 class="card-title">
+                  Teenagers Shop for the Vulnerable During Coronavirus
+                  Emergency
+                </h5>
+              </div>
+            </div>
+          </section>
+          <!-- Culture and Travel Section -->
+          <section class="culture">
+            <h2 class="section-title px-2 pt-2 pb-0">Culture & Travel</h2>
+            <div class="row">
+              <div class="card col-md-4">
+                <img src="images/culture-1.webp" alt="" />
+                <h5 class="card-title">
+                  Rare, Never Before Seen Photos of James Bond Available in
+                  New Book
+                </h5>
+              </div>
+              <div class="card col-md-4">
+                <img src="images/culture-2.webp" alt="" />
+                <h5 class="card-title">
+                  Wanderlust Stricken? The 10 Best Travel TV Shows to Watch
+                  Now
+                </h5>
+              </div>
+              <div class="card col-md-4">
+                <img src="images/culture-3.webp" alt="" />
+                <h5 class="card-title">
+                  Bread Baking Is on the Rise: Drool-Worthy Photos Beyond
+                  Sourdough
+                </h5>
+              </div>
+            </div>
+          </section>
+          <section class="more-stories">
+            <h2 class="section-title px-2 pt-2 pb-0">More Stories</h2>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-1.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      WHO Says COVID-19 Is Bringing Out the 'Best and Worst of
+                      Us'
+                    </h5>
+                    <p class="card-text article-description">
+                      Michael Ryan, the WHO's emergencies director, said it
+                      had recorded more than 35 "quite serious" incidents in
+                      11 countries in April involving attacks on individuals
+                      and groups.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-2.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body px-0 py-1">
+                    <h5 class="card-title article-title">
+                      Wisconsin Supreme Court Justice Calls Out 'Tyrannical'
+                      Colleagues
+                    </h5>
+                    <p class="card-text article-description">
+                      The emergency order has been branded "unlawful, invalid,
+                      and unenforceable" after a challenge was taken to
+                      Wisconsin's Supreme Court.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-3.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      'My Mom Battled Breast Cancer Twice, So I Had A Double
+                      Mastectomy at 24'
+                    </h5>
+                    <p class="card-text article-description">
+                      I've spent the last nine years feeling miserable in
+                      changing rooms and having the odd cry. Something snapped
+                      in me last year, and I thought, "I can do something
+                      about this!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-5.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      South Carolina Voters Can Now Cast Absentee Ballots Amid
+                      Pandemic
+                    </h5>
+                    <p class="card-text article-description">
+                      "This is an important victory for South Carolinians who
+                      want to vote in the primary without risking their
+                      health," said Adriel Cepeda Derieux, an attorney with
+                      the ACLU's Voting Rights Project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-6.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      'Facebook Sucks': Musk Hits Back at Criticism From
+                      Social Media AI Chief
+                    </h5>
+                    <p class="card-text article-description">
+                      "There is no such thing as AGI and we are nowhere near
+                      matching human intelligence," Jerome Pesenti tweeted.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-7.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      Calculator Shows How Likely a Person Is to Die During
+                      COVID-19 Pandemic
+                    </h5>
+                    <p class="card-text article-description">
+                      The team drew from the health records of millions of
+                      people in England.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-8.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      New 100 Percent Accurate COVID-19 Antibody Test Approved
+                      for Use in U.K.
+                    </h5>
+                    <p class="card-text article-description">
+                      The idea has been called a "game-changer" by Prime
+                      Minister Boris Johnson as it allows the government to
+                      understand how many people had COVID-19 and potentially
+                      speed up the easing of lockdown restrictions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-9.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      Americans Divided Over Whether NFL, NBA, MLB Should
+                      Return This Year: Poll
+                    </h5>
+                    <p class="card-text article-description">
+                      Less than 50 percent of Americans favor a return of
+                      professional sports this year, according to a CNN
+                      survey.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-10.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      Tlaib Warns Bezos 'We Don't Play' as She Requests Amazon
+                      Site Probe
+                    </h5>
+                    <p class="card-text article-description">
+                      Concerns have been raised over worker safety in regards
+                      to issues such as social distancing and protective
+                      equipment at Amazon sites amid the COVID-19 pandemic.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-1.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      WHO Says COVID-19 Is Bringing Out the 'Best and Worst of
+                      Us'
+                    </h5>
+                    <p class="card-text article-description">
+                      Michael Ryan, the WHO's emergencies director, said it
+                      had recorded more than 35 "quite serious" incidents in
+                      11 countries in April involving attacks on individuals
+                      and groups.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-2.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      Wisconsin Supreme Court Justice Calls Out 'Tyrannical'
+                      Colleagues
+                    </h5>
+                    <p class="card-text article-description">
+                      The emergency order has been branded "unlawful, invalid,
+                      and unenforceable" after a challenge was taken to
+                      Wisconsin's Supreme Court.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-3.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      'My Mom Battled Breast Cancer Twice, So I Had A Double
+                      Mastectomy at 24'
+                    </h5>
+                    <p class="card-text article-description">
+                      I've spent the last nine years feeling miserable in
+                      changing rooms and having the odd cry. Something snapped
+                      in me last year, and I thought, "I can do something
+                      about this!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-5.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      South Carolina Voters Can Now Cast Absentee Ballots Amid
+                      Pandemic
+                    </h5>
+                    <p class="card-text article-description">
+                      "This is an important victory for South Carolinians who
+                      want to vote in the primary without risking their
+                      health," said Adriel Cepeda Derieux, an attorney with
+                      the ACLU's Voting Rights Project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-6.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      'Facebook Sucks': Musk Hits Back at Criticism From
+                      Social Media AI Chief
+                    </h5>
+                    <p class="card-text article-description">
+                      "There is no such thing as AGI and we are nowhere near
+                      matching human intelligence," Jerome Pesenti tweeted.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-7.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      Calculator Shows How Likely a Person Is to Die During
+                      COVID-19 Pandemic
+                    </h5>
+                    <p class="card-text article-description">
+                      The team drew from the health records of millions of
+                      people in England.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-8.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      New 100 Percent Accurate COVID-19 Antibody Test Approved
+                      for Use in U.K.
+                    </h5>
+                    <p class="card-text article-description">
+                      The idea has been called a "game-changer" by Prime
+                      Minister Boris Johnson as it allows the government to
+                      understand how many people had COVID-19 and potentially
+                      speed up the easing of lockdown restrictions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-9.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      Americans Divided Over Whether NFL, NBA, MLB Should
+                      Return This Year: Poll
+                    </h5>
+                    <p class="card-text article-description">
+                      Less than 50 percent of Americans favor a return of
+                      professional sports this year, according to a CNN
+                      survey.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-10.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      Tlaib Warns Bezos 'We Don't Play' as She Requests Amazon
+                      Site Probe
+                    </h5>
+                    <p class="card-text article-description">
+                      Concerns have been raised over worker safety in regards
+                      to issues such as social distancing and protective
+                      equipment at Amazon sites amid the COVID-19 pandemic.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col-md-2 py-2">
+                  <img src="images/more-3.webp" class="card-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-2">
+                    <h5 class="card-title article-title">
+                      'My Mom Battled Breast Cancer Twice, So I Had A Double
+                      Mastectomy at 24'
+                    </h5>
+                    <p class="card-text article-description">
+                      I've spent the last nine years feeling miserable in
+                      changing rooms and having the odd cry. Something snapped
+                      in me last year, and I thought, "I can do something
+                      about this!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
 
-          <!-- Center Column -->
-          <div class="center-container col-5 featured-stories px-0 py-4">
-            <!-- Top Story Section -->
-            <section class="featured-stories">
-              <h2 class="section-title">Top Story</h2>
-              <div class="card">
-                <img
-                  src="images/wisconsin-gov-tony-evers.webp"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Wisconsin Governor Says State Is 'Wild West' After
-                    Stay-at-Home Order Ruling
-                  </h5>
-                  <p class="card-text">
-                    Tony Evers said Wisconsin had been thrown into "chaos" by
-                    four judges as coronavirus lockdown restrictions no longer
-                    applied in the state.
-                  </p>
+        <!-- Right Column -->
+        <div class="col p-0 pl-3">
+          <section class="opinion">
+            <h2 class="section-title  px-2 pt-2 pb-0">Opinion</h2>
+            <div class="card p-0">
+              <div class="row no-gutters">
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                  <img src="images/nathan-lewin.webp" class="card-img author-img" alt="..." />
                 </div>
-              </div>
-            </section>
-            <!-- Heros of the Pandemic Section -->
-            <section class="heros">
-              <h2 class="section-title">Heroes of the Pandemic</h2>
-              <div class="row">
-                <div class="card col-md-4">
-                  <img src="images/hero-1.webp" alt="" />
-                  <h5 class="card-title">
-                    Organizer Helps Rebuild New York's Filipino Community Hit by
-                    COVID-19
-                  </h5>
-                </div>
-                <div class="card col-md-4">
-                  <img src="images/hero-2.webp" alt="" />
-                  <h5 class="card-title">
-                    Tennessee Group Makes Coronavirus Face Masks for Local,
-                    International Use
-                  </h5>
-                </div>
-                <div class="card col-md-4">
-                  <img src="images/hero-3.webp" alt="" />
-                  <h5 class="card-title">
-                    Teenagers Shop for the Vulnerable During Coronavirus
-                    Emergency
-                  </h5>
-                </div>
-              </div>
-            </section>
-            <!-- Culture and Travel Section -->
-            <section class="culture">
-              <h2 class="section-title">Heroes of the Pandemic</h2>
-              <div class="row">
-                <div class="card col-md-4">
-                  <img src="images/culture-1.webp" alt="" />
-                  <h5 class="card-title">
-                    Rare, Never Before Seen Photos of James Bond Available in
-                    New Book
-                  </h5>
-                </div>
-                <div class="card col-md-4">
-                  <img src="images/culture-2.webp" alt="" />
-                  <h5 class="card-title">
-                    Wanderlust Stricken? The 10 Best Travel TV Shows to Watch
-                    Now
-                  </h5>
-                </div>
-                <div class="card col-md-4">
-                  <img src="images/culture-3.webp" alt="" />
-                  <h5 class="card-title">
-                    Bread Baking Is on the Rise: Drool-Worthy Photos Beyond
-                    Sourdough
-                  </h5>
-                </div>
-              </div>
-            </section>
-            <section class="more-stories">
-              <h2 class="section-title">More Stories</h2>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-1.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        WHO Says COVID-19 Is Bringing Out the 'Best and Worst of
-                        Us'
-                      </h5>
-                      <p class="card-text article-description">
-                        Michael Ryan, the WHO's emergencies director, said it
-                        had recorded more than 35 "quite serious" incidents in
-                        11 countries in April involving attacks on individuals
-                        and groups.
-                      </p>
-                    </div>
+                <div class="col">
+                  <div class="card-body p-1 pr-2">
+                    <h5 class="card-title">
+                      Did the Supreme Court Forget How It Curtailed Religious
+                      Freedom?
+                    </h5>
+                    <p class="card-text author">By Nathan Lewin</p>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-2.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        Wisconsin Supreme Court Justice Calls Out 'Tyrannical'
-                        Colleagues
-                      </h5>
-                      <p class="card-text article-description">
-                        The emergency order has been branded "unlawful, invalid,
-                        and unenforceable" after a challenge was taken to
-                        Wisconsin's Supreme Court.
-                      </p>
-                    </div>
+            </div>
+            <div class="card p-0">
+              <div class="row no-gutters">
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                  <img src="images/chip-roy.webp" class="card-img author-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body p-1 pr-2">
+                    <h5 class="card-title p-0">Let America Open</h5>
+                    <p class="card-text author">By Chip Roy</p>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-3.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        'My Mom Battled Breast Cancer Twice, So I Had A Double
-                        Mastectomy at 24'
-                      </h5>
-                      <p class="card-text article-description">
-                        I've spent the last nine years feeling miserable in
-                        changing rooms and having the odd cry. Something snapped
-                        in me last year, and I thought, "I can do something
-                        about this!"
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-5.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        South Carolina Voters Can Now Cast Absentee Ballots Amid
-                        Pandemic
-                      </h5>
-                      <p class="card-text article-description">
-                        "This is an important victory for South Carolinians who
-                        want to vote in the primary without risking their
-                        health," said Adriel Cepeda Derieux, an attorney with
-                        the ACLU's Voting Rights Project.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-6.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        'Facebook Sucks': Musk Hits Back at Criticism From
-                        Social Media AI Chief
-                      </h5>
-                      <p class="card-text article-description">
-                        "There is no such thing as AGI and we are nowhere near
-                        matching human intelligence," Jerome Pesenti tweeted.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-7.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        Calculator Shows How Likely a Person Is to Die During
-                        COVID-19 Pandemic
-                      </h5>
-                      <p class="card-text article-description">
-                        The team drew from the health records of millions of
-                        people in England.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-8.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        New 100 Percent Accurate COVID-19 Antibody Test Approved
-                        for Use in U.K.
-                      </h5>
-                      <p class="card-text article-description">
-                        The idea has been called a "game-changer" by Prime
-                        Minister Boris Johnson as it allows the government to
-                        understand how many people had COVID-19 and potentially
-                        speed up the easing of lockdown restrictions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-9.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        Americans Divided Over Whether NFL, NBA, MLB Should
-                        Return This Year: Poll
-                      </h5>
-                      <p class="card-text article-description">
-                        Less than 50 percent of Americans favor a return of
-                        professional sports this year, according to a CNN
-                        survey.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-10.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        Tlaib Warns Bezos 'We Don't Play' as She Requests Amazon
-                        Site Probe
-                      </h5>
-                      <p class="card-text article-description">
-                        Concerns have been raised over worker safety in regards
-                        to issues such as social distancing and protective
-                        equipment at Amazon sites amid the COVID-19 pandemic.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-1.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        WHO Says COVID-19 Is Bringing Out the 'Best and Worst of
-                        Us'
-                      </h5>
-                      <p class="card-text article-description">
-                        Michael Ryan, the WHO's emergencies director, said it
-                        had recorded more than 35 "quite serious" incidents in
-                        11 countries in April involving attacks on individuals
-                        and groups.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-2.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        Wisconsin Supreme Court Justice Calls Out 'Tyrannical'
-                        Colleagues
-                      </h5>
-                      <p class="card-text article-description">
-                        The emergency order has been branded "unlawful, invalid,
-                        and unenforceable" after a challenge was taken to
-                        Wisconsin's Supreme Court.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-3.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        'My Mom Battled Breast Cancer Twice, So I Had A Double
-                        Mastectomy at 24'
-                      </h5>
-                      <p class="card-text article-description">
-                        I've spent the last nine years feeling miserable in
-                        changing rooms and having the odd cry. Something snapped
-                        in me last year, and I thought, "I can do something
-                        about this!"
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-5.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        South Carolina Voters Can Now Cast Absentee Ballots Amid
-                        Pandemic
-                      </h5>
-                      <p class="card-text article-description">
-                        "This is an important victory for South Carolinians who
-                        want to vote in the primary without risking their
-                        health," said Adriel Cepeda Derieux, an attorney with
-                        the ACLU's Voting Rights Project.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-6.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        'Facebook Sucks': Musk Hits Back at Criticism From
-                        Social Media AI Chief
-                      </h5>
-                      <p class="card-text article-description">
-                        "There is no such thing as AGI and we are nowhere near
-                        matching human intelligence," Jerome Pesenti tweeted.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-7.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        Calculator Shows How Likely a Person Is to Die During
-                        COVID-19 Pandemic
-                      </h5>
-                      <p class="card-text article-description">
-                        The team drew from the health records of millions of
-                        people in England.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-8.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        New 100 Percent Accurate COVID-19 Antibody Test Approved
-                        for Use in U.K.
-                      </h5>
-                      <p class="card-text article-description">
-                        The idea has been called a "game-changer" by Prime
-                        Minister Boris Johnson as it allows the government to
-                        understand how many people had COVID-19 and potentially
-                        speed up the easing of lockdown restrictions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-9.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        Americans Divided Over Whether NFL, NBA, MLB Should
-                        Return This Year: Poll
-                      </h5>
-                      <p class="card-text article-description">
-                        Less than 50 percent of Americans favor a return of
-                        professional sports this year, according to a CNN
-                        survey.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-10.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        Tlaib Warns Bezos 'We Don't Play' as She Requests Amazon
-                        Site Probe
-                      </h5>
-                      <p class="card-text article-description">
-                        Concerns have been raised over worker safety in regards
-                        to issues such as social distancing and protective
-                        equipment at Amazon sites amid the COVID-19 pandemic.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col-md-2 py-2">
-                    <img src="images/more-3.webp" class="card-img" alt="..." />
-                  </div>
-                  <div class="col">
-                    <div class="card-body p-2">
-                      <h5 class="card-title article-title">
-                        'My Mom Battled Breast Cancer Twice, So I Had A Double
-                        Mastectomy at 24'
-                      </h5>
-                      <p class="card-text article-description">
-                        I've spent the last nine years feeling miserable in
-                        changing rooms and having the odd cry. Something snapped
-                        in me last year, and I thought, "I can do something
-                        about this!"
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
 
-          <!-- Right Column -->
-          <div class="col p-3">
-            <section class="opinion">
-              <h2 class="section-title">Opinion</h2>
-              <div class="card">
+              <div class="card p-0">
                 <div class="row no-gutters">
-                  <div
-                    class="col-md-3 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/nathan-lewin.webp"
-                      class="card-img author-img"
-                      alt="..."
-                    />
+                  <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <img src="images/marco-rubio.webp" class="card-img author-img" alt="..." />
                   </div>
                   <div class="col">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Did the Supreme Court Forget How It Curtailed Religious
-                        Freedom?
-                      </h5>
-                      <p class="card-text author">By Nathan Lewin</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-3 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/chip-roy.webp"
-                      class="card-img author-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body">
-                      <h5 class="card-title">Let America Open</h5>
-                      <p class="card-text author">By Chip Roy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-3 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/marco-rubio.webp"
-                      class="card-img author-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body">
-                      <h5 class="card-title">
+                    <div class="card-body p-1 pr-2">
+                      <h5 class="card-title pt-0">
                         Rename the Chinese Embassy Street After the Coronavirus
                         Whistleblower
                       </h5>
@@ -759,20 +702,14 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card p-0">
                 <div class="row no-gutters">
-                  <div
-                    class="col-md-3 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/john-yoo-robert-delahunty.webp"
-                      class="card-img author-img"
-                      alt="..."
-                    />
+                  <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <img src="images/john-yoo-robert-delahunty.webp" class="card-img author-img" alt="..." />
                   </div>
                   <div class="col">
-                    <div class="card-body">
-                      <h5 class="card-title">
+                    <div class="card-body p-1 pr-2">
+                      <h5 class="card-title pr-2">
                         The World Health Organization Is Not Salvageable
                       </h5>
                       <p class="card-text author">
@@ -782,314 +719,241 @@
                   </div>
                 </div>
               </div>
-            </section>
+          </section>
 
-            <!-- Debate Section -->
-            <section class="debate">
-              <h2 class="section-title">The Debate</h2>
-              <div class="card border-top-danger">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-4 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/james-comey.webp"
-                      class="card-img py-1 debate-square-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body d-flex p-0">
-                      <h5 class="card-title">
-                        The Unraveling of the Deep State's Coup Against
-                        President Trump
-                      </h5>
-                    </div>
+          <!-- Debate Section -->
+          <section class="debate">
+            <h2 class="section-title px-2 pt-2 pb-0">The Debate</h2>
+            <div class="card border-top-danger">
+              <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/james-comey.webp" class="card-img  debate-square-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body d-flex card p-0  p">
+                    <h5 class="card-title">
+                      The Unraveling of the Deep State's Coup Against
+                      President Trump
+                    </h5>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="card-body">
-                      <p class="card-text author">By Jodi Hice</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-md-3 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/jody-hice.webp"
-                      class="card-img author-img"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="card border-top-danger">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-4 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/michael-flynn.webp"
-                      class="card-img py-1 debate-square-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body d-flex p-0">
-                      <h5 class="card-title">
-                        President Trump Has Weaponized the Justice Department
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="card-body">
-                      <p class="card-text author">By Eric Swalwell</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-md-3 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/swalwell2.webp"
-                      class="card-img author-img"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Latest News Section -->
-            <section class="latest-news">
-              <h2 class="section-title">Latest News</h2>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-4 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/mary-kate-olsen.webp"
-                      class="card-img py-1 latest-news-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body d-flex p-1">
-                      <h5 class="card-title">
-                        Mary Kate-Olsen Getting Divorced
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-4 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/gozo-malta-heat-burst.webp"
-                      class="card-img py-1 latest-news-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body d-flex p-0">
-                      <h5 class="card-title">
-                        Rare 'Heat Burst' Sees Temperature in One Country Rise
-                        By 11 Degrees
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-4 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/catherine-great.webp"
-                      class="card-img py-1 latest-news-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body d-flex p-0">
-                      <h5 class="card-title">
-                        5 Moments From Catherine The Great's Life That Might Be
-                        Tricky to Televise
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-4 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/indonesia.webp"
-                      class="card-img py-1 latest-news-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body d-flex p-0">
-                      <h5 class="card-title">
-                        Video Shows Live Animal Markets Still Operating Across
-                        Asia
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row no-gutters">
-                  <div
-                    class="col-md-4 d-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="images/coronavirus-us.webp"
-                      class="card-img py-1 latest-news-img"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="card-body d-flex p-0">
-                      <h5 class="card-title">
-                        Nearly Half of Americans Think Life Won't Return to
-                        Normal Until 2021: Poll
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Large Cards -->
-              <div class="card">
-                <img
-                  src="images/liberal-arts-schools-2020.webp"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    What Sets the Leading Liberal Arts Schools Apart?
-                  </h5>
-                  <p class="card-text">
-                    There are a number of great Liberal Arts Schools in the USA
-                    today, but what qualities do the best of them have?
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="images/singapore.JPG" alt="" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Singapore: Looking to the Future
-                  </h5>
-                  <p class="card-text">
-                    Known worldwide as a top business, banking, and investment
-                    destination, Singapore has sustained its stellar
-                    international reputation for decades.
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="images/leading-uni.JPG" alt="" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    What Qualities Make a Leading University?
-                  </h5>
-                  <p class="card-text">
-                    A Leading University has to have a track record of producing
-                    well qualified, gifted and employable candidates. Which
-                    schools earn the accolade?
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="images/business-ed.JPG" alt="" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    How Can a Good Business Education Benefit You?
-                  </h5>
-                  <p class="card-text">
-                    Enrolling at a good Business School might be the best
-                    investment you can make in your future, and while costs can
-                    be significant, the rewards are incalculable. Find out more.
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="images/food-as-medicine.JPG"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Newsweek Special Edition: Food as Medicine
-                  </h5>
-                  <p class="card-text">
-                    Humans have been using natural remedies like spices and
-                    herbs to heal common ailments for centuries. Now food
-                    science is proving many of those traditions true and
-                    innovating new ways to heal our bodies from the inside out.
-                    Discover the power of plant-based nutrition with this
-                    Newsweek Special Edition and start your journey to a
-                    healthier you.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <!-- Magazine Section -->
-        <section class="magazine">
-          <h2 class="section-title-lg text-center"><img src="images/icon.png" class="newsweek-icon">In the Magazine</h2>
-          <div class="row">
-            <div class="card col-md-3 px-2">
-              <img
-                src="images/magazine-featue.webp"
-                alt=""
-                class="magazine-feature"
-              />
             </div>
-            <div class="card mt-4 col-md-3 px-2">
-              <img
-                src="images/mag-1.webp"
-                alt=""
-                class="card-img-top"
-              />
-              <div class="card-buttons">
-                <button class="bg-danger btn text-white">Cover</button>
-                <button class="bg-white btn text-bold text-danger">
-                  Health
-                </button>
+            <div class="card p-2 pr-3">
+              <div class="row no-gutters">
+                <div class="col">
+                  <div class="card-body px-1">
+                    <p class="card-text author">By Jodi Hice</p>
+                  </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                  <img src="images/jody-hice.webp" class="card-img author-img" alt="..." />
+                </div>
               </div>
-              <div class="card-body">
+            </div>
+            <div class="card border-top-danger">
+              <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/michael-flynn.webp" class="card-img py-1 debate-square-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body d-flex p-0">
+                    <h5 class="card-title">
+                      President Trump Has Weaponized the Justice Department
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2">
+              <div class="row no-gutters">
+                <div class="col">
+                  <div class="card-body">
+                    <p class="card-text author">By Eric Swalwell</p>
+                  </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                  <img src="images/swalwell2.webp" class="card-img author-img" alt="..." />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Latest News Section -->
+          <section class="latest-news">
+            <h2 class="section-title px-2 pt-2 pb-0">Latest News</h2>
+            <div class="card p-1">
+              <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/mary-kate-olsen.webp" class="card-img py-1 latest-news-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body d-flex p-1">
+                    <h5 class="card-title">
+                      Mary Kate-Olsen Getting Divorced
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-1 pr-3">
+              <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/gozo-malta-heat-burst.webp" class="card-img py-1 latest-news-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body d-flex p-0">
+                    <h5 class="card-title">
+                      Rare 'Heat Burst' Sees Temperature in One Country Rise
+                      By 11 Degrees
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-1 pr-3">
+              <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/catherine-great.webp" class="card-img py-1 latest-news-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body d-flex p-0">
+                    <h5 class="card-title">
+                      5 Moments From Catherine The Great's Life That Might Be
+                      Tricky to Televise
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-1 pr-3">
+              <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/indonesia.webp" class="card-img py-1 latest-news-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body d-flex p-0">
+                    <h5 class="card-title">
+                      Video Shows Live Animal Markets Still Operating Across
+                      Asia
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-1 pr-3">
+              <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/coronavirus-us.webp" class="card-img py-1 latest-news-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body d-flex p-0">
+                    <h5 class="card-title">
+                      Nearly Half of Americans Think Life Won't Return to
+                      Normal Until 2021: Poll
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Large Cards -->
+            <div class="card p-1 pr-4 m-2">
+              <img src="images/liberal-arts-schools-2020.webp" alt="" class="card-img-top" />
+              <div class="card-body p-0 pt-1">
                 <h5 class="card-title">
-                  Would You Let Government Track Your Smartphone To Help U.S.
-                  Reopen Sooner?
+                  What Sets the Leading Liberal Arts Schools Apart?
                 </h5>
+                <p class="card-text">
+                  There are a number of great Liberal Arts Schools in the USA
+                  today, but what qualities do the best of them have?
+                </p>
               </div>
             </div>
+            <div class="card p-1 pr-4 m-2">
+              <img src="images/singapore.JPG" alt="" class="card-img-top" />
+              <div class="card-body p-0 pt-1">
+                <h5 class="card-title">
+                  Singapore: Looking to the Future
+                </h5>
+                <p class="card-text">
+                  Known worldwide as a top business, banking, and investment
+                  destination, Singapore has sustained its stellar
+                  international reputation for decades.
+                </p>
+              </div>
+            </div>
+            <div class="card p-1 pr-4 m-2">
+              <img src="images/leading-uni.JPG" alt="" class="card-img-top" />
+              <div class="card-body p-0 pt-1">
+                <h5 class="card-title">
+                  What Qualities Make a Leading University?
+                </h5>
+                <p class="card-text">
+                  A Leading University has to have a track record of producing
+                  well qualified, gifted and employable candidates. Which
+                  schools earn the accolade?
+                </p>
+              </div>
+            </div>
+            <div class="card p-1 pr-4 m-2">
+              <img src="images/business-ed.JPG" alt="" class="card-img-top" />
+              <div class="card-body p-0 pt-1">
+                <h5 class="card-title">
+                  How Can a Good Business Education Benefit You?
+                </h5>
+                <p class="card-text">
+                  Enrolling at a good Business School might be the best
+                  investment you can make in your future, and while costs can
+                  be significant, the rewards are incalculable. Find out more.
+                </p>
+              </div>
+            </div>
+            <div class="card p-1 pr-4 m-2">
+              <img src="images/food-as-medicine.JPG" alt="" class="card-img-top" />
+              <div class="card-body p-0 pt-1">
+                <h5 class="card-title">
+                  Newsweek Special Edition: Food as Medicine
+                </h5>
+                <p class="card-text">
+                  Humans have been using natural remedies like spices and
+                  herbs to heal common ailments for centuries. Now food
+                  science is proving many of those traditions true and
+                  innovating new ways to heal our bodies from the inside out.
+                  Discover the power of plant-based nutrition with this
+                  Newsweek Special Edition and start your journey to a
+                  healthier you.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Magazine Section -->
+      <section class="magazine">
+        <h2 class="section-title-lg px-2 pt-2 pb-0 text-center"><img src="images/icon.png" class="newsweek-icon">In the
+          Magazine</h2>
+        <div class="row">
+          <div class="card col-md-3 px-2">
+            <img src="images/magazine-featue.webp" alt="" class="magazine-feature" />
+          </div>
+          <div class="card mt-4 col-md-3 px-2">
+            <img src="images/mag-1.webp" alt="" class="card-img-top" />
+            <div class="card-buttons">
+              <button class="bg-danger btn text-white">Cover</button>
+              <button class="bg-white btn text-bold text-danger">
+                Health
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Would You Let Government Track Your Smartphone To Help U.S.
+                Reopen Sooner?
+              </h5>
+            </div>
+          </div>
           <div class="card mt-4 col-md-3  px-2">
-            <img
-              src="images/magazine2.webp"
-              alt=""
-              class="card-img-top"
-            />
+            <img src="images/magazine2.webp" alt="" class="card-img-top" />
             <div class="card-buttons">
               <button class="bg-danger btn text-white">Cover</button>
               <button class="bg-white btn text-bold text-danger">
@@ -1103,11 +967,7 @@
             </div>
           </div>
           <div class="card mt-4 col-md-3 px-2">
-            <img
-              src="images/mag-4.webp"
-              alt=""
-              class="card-img-top"
-            />
+            <img src="images/mag-4.webp" alt="" class="card-img-top" />
             <div class="card-buttons">
               <button class="bg-danger btn text-white">Features</button>
               <button class="bg-white btn text-bold text-danger">
@@ -1121,11 +981,7 @@
             </div>
           </div>
           <div class="card mt-4 col-md-3 px-2">
-            <img
-              src="images/mag-5.webp"
-              alt=""
-              class="card-img-top"
-            />
+            <img src="images/mag-5.webp" alt="" class="card-img-top" />
             <div class="card-buttons">
               <button class="bg-danger btn text-white">Periscope</button>
               <button class="bg-white btn text-bold text-danger">
@@ -1139,11 +995,7 @@
             </div>
           </div>
           <div class="card mt-4 col-md-3 px-2">
-            <img
-              src="images/mag-6.webp"
-              alt=""
-              class="card-img-top"
-            />
+            <img src="images/mag-6.webp" alt="" class="card-img-top" />
             <div class="card-buttons">
               <button class="bg-danger btn text-white">Horizons</button>
               <button class="bg-white btn text-bold text-danger">
@@ -1157,11 +1009,7 @@
             </div>
           </div>
           <div class="card mt-4 col-md-3 px-2">
-            <img
-              src="images/mag-7.webp"
-              alt=""
-              class="card-img-top"
-            />
+            <img src="images/mag-7.webp" alt="" class="card-img-top" />
             <div class="card-buttons">
               <button class="bg-danger btn text-white">Downtime</button>
               <button class="bg-white btn text-bold text-danger">
@@ -1175,11 +1023,7 @@
             </div>
           </div>
           <div class="card mt-4 col-md-3 px-2">
-            <img
-              src="images/mag-8.JPG"
-              alt=""
-              class="card-img-top"
-            />
+            <img src="images/mag-8.JPG" alt="" class="card-img-top" />
             <div class="card-buttons">
               <button class="bg-danger btn text-white">In Focus</button>
               <button class="bg-white btn text-bold text-danger">
@@ -1192,150 +1036,165 @@
               </h5>
             </div>
           </div>
-        </section>
+      </section>
 
-        <!-- Editor's Pick Section -->
-        <section class="editors-pick">
-            <h2 class="section-title-lg text-center"><img src="images/icon.png" class="newsweek-icon">Editor's Pick</h2>
-            <div class="row">
-                <div class="card col-md-3 px-2">
-                    <img
-                      src="images/ep-1.webp"
-                      alt=""
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        New Worm Species With Glamorous Iridescent Scales Discovered in Ocean Abyss
-                      </h5>
-                      <p class="card-text">
-                        The bizarre creatures are colloquially known as "Elvis worms" due to their shiny scales being reminiscent of the King of Rock's famous sequinned suits.                      </p>
-                    </div>
-                </div>
-                <div class="card col-md-3 px-2">
-                    <img
-                      src="images/ep-2.webp"
-                      alt=""
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        COVID-19 Pandemic Could Cause Spike in Psychosis Cases, Scientists Warn
-                      </h5>
-                      <p class="card-text">
-                        "COVID-19 is a very stressful experience for everyone, particularly those with complex mental health needs," said Ellie Brown of the University of Melbourne.
-                      </p>
-                    </div>
-                </div>
-                <div class="card col-md-3 px-2">
-                    <img
-                      src="images/ep-3.webp"
-                      alt=""
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        The U.K. COVID-19 response is stuck between a furlough and a hard place
-                      </h5>
-                      <p class="card-text">
-                        What comes next for the economy when the government can't really afford to keep the furlough scheme running for much longer financially and can't afford to end it politically?
-                      </p>
-                    </div>
-                </div>
-                <div class="card col-md-3 px-2">
-                    <img
-                      src="images/ep-4.webp"
-                      alt=""
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        The Anti-vaxxers Are Winning the Battle on Facebook
-                      </h5>
-                      <p class="card-text">
-                        "Anti-vaccination has pulled in the huge population of people who ordinarily don't talk a lot online about such issues," study author Neil Johnson told Newsweek.
-                      </p>
-                    </div>
-                </div>
-                <div class="card col-md-3 px-2">
-                    <img
-                      src="images/ep-5.webp"
-                      alt=""
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        HEROES Act Would Protect Immigrant Essential Workers From Deportation
-                      </h5>
-                      <p class="card-text">
-                        The HEROES Act offers new support and protections for immigrant workers and taxpayers in the U.S.
-                      </p>
-                    </div>
-                </div>
-                <div class="card col-md-3 px-2">
-                    <img
-                      src="images/ep-6.webp"
-                      alt=""
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Biden Among Those Who Sought to Unmask Michael Flynn, Intel Chief Says
-                      </h5>
-                      <p class="card-text">
-                        The revelations were made public thanks to documents that were declassified Wednesday by acting Director of National Intelligence Richard Grenell at the request of Republican senators.
-                      </p>
-                    </div>
-                </div>
-                <div class="card col-md-3 px-2">
-                    <img
-                      src="images/ep-7.webp"
-                      alt=""
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        COVID-19 Test, Used on White House Staff, Produces False Negatives: Study
-                      </h5>
-                      <p class="card-text">
-                        Abbott immediately disputed the study, which has yet to be peer reviewed, and claimed that the researchers may not have taken the samples correctly.
-                      </p>
-                    </div>
-                </div>
-                <div class="card col-md-3 px-2">
-                    <img
-                      src="images/ep-8.webp"
-                      alt=""
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Trump Won't Treat U.K. Fairly During Trade Deal Negotiations: Poll
-                      </h5>
-                      <p class="card-text">
-                        In a poll for Newsweek, a majority of Britons said they do not think the Trump Administration will treat the U.K. "fairly and respectfully" in trade negotiations.
-                      </p>
-                    </div>
-                </div>
+      <!-- Editor's Pick Section -->
+      <section class="editors-pick">
+        <h2 class="section-title-lg px-2 pt-2 pb-0 text-center"><img src="images/icon.png"
+            class="newsweek-icon">Editor's
+          Pick</h2>
+        <div class="row">
+          <div class="card col-md-6 col-lg-3 px-2">
+            <img src="images/ep-1.webp" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                New Worm Species With Glamorous Iridescent Scales Discovered in Ocean Abyss
+              </h5>
+              <p class="card-text">
+                The bizarre creatures are colloquially known as "Elvis worms" due to their shiny scales being
+                reminiscent of the King of Rock's famous sequinned suits. </p>
             </div>
-          </section>
-      </main>
-    </div>
+          </div>
+          <div class="card col-md-6 col-lg-3 px-2">
+            <img src="images/ep-2.webp" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                COVID-19 Pandemic Could Cause Spike in Psychosis Cases, Scientists Warn
+              </h5>
+              <p class="card-text">
+                "COVID-19 is a very stressful experience for everyone, particularly those with complex mental health
+                needs," said Ellie Brown of the University of Melbourne.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-3 px-2">
+            <img src="images/ep-3.webp" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                The U.K. COVID-19 response is stuck between a furlough and a hard place
+              </h5>
+              <p class="card-text">
+                What comes next for the economy when the government can't really afford to keep the furlough scheme
+                running for much longer financially and can't afford to end it politically?
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-3 px-2">
+            <img src="images/ep-4.webp" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                The Anti-vaxxers Are Winning the Battle on Facebook
+              </h5>
+              <p class="card-text">
+                "Anti-vaccination has pulled in the huge population of people who ordinarily don't talk a lot online
+                about such issues," study author Neil Johnson told Newsweek.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-3 px-2">
+            <img src="images/ep-5.webp" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                HEROES Act Would Protect Immigrant Essential Workers From Deportation
+              </h5>
+              <p class="card-text">
+                The HEROES Act offers new support and protections for immigrant workers and taxpayers in the U.S.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-3 px-2">
+            <img src="images/ep-6.webp" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Biden Among Those Who Sought to Unmask Michael Flynn, Intel Chief Says
+              </h5>
+              <p class="card-text">
+                The revelations were made public thanks to documents that were declassified Wednesday by acting Director
+                of National Intelligence Richard Grenell at the request of Republican senators.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-3 px-2">
+            <img src="images/ep-7.webp" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                COVID-19 Test, Used on White House Staff, Produces False Negatives: Study
+              </h5>
+              <p class="card-text">
+                Abbott immediately disputed the study, which has yet to be peer reviewed, and claimed that the
+                researchers may not have taken the samples correctly.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-3 px-2">
+            <img src="images/ep-8.webp" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Trump Won't Treat U.K. Fairly During Trade Deal Negotiations: Poll
+              </h5>
+              <p class="card-text">
+                In a poll for Newsweek, a majority of Britons said they do not think the Trump Administration will treat
+                the U.K. "fairly and respectfully" in trade negotiations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="footer-top d-flex justify-content-between">
+        <div class="left ">
+          <img src="images/logo-red.png" alt="">
+          <span>&copy; 2020 NEWSWEEK</span>
+        </div>
+
+        <ul class="social-media-links d-flex">
+          <li class="social-link"><i class="fa fa-facebook fa-lg"></i></li>
+          <li class="social-link"><i class="fa fa-twitter fa-lg"></i></li>
+          <li class="social-link"><i class="fa fa-instagram fa-lg"></i></li>
+          <li class="social-link"><i class="fa fa-twitter fa-lg"></i></li>
+          <li class="social-link"><i class="fa fa-linkedin fa-lg"></i></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <ul class="editions d-flex">
+          <li class="bold">Editions:</li>
+          <li>U.S. Edition</li>
+          <li>日本</li>
+          <li>Pakistan</li>
+          <li>Polska</li>
+          <li>Romania</li>
+        </ul>
+        <ul class="footer-nav-links pb-4 d-flex">
+          <li>About Us</li>
+          <li>Corrections</li>
+          <li>Contact Us</li>
+          <li>Editorial Guidelines</li>
+          <li>Advertise</li>
+          <li>Copyright</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Sale</li>
+          <li>Archive</li>
+          <li>Announcements</li>
+          <li>Consent Preferences</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
