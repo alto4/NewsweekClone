@@ -405,9 +405,14 @@ body {
   }
 
   .latest-news img,
-  .culture img,
   .magazine .card img {
     height: 70%;
+  }
+
+  .heros .card img,
+  .culture .card img {
+    max-height: 320px;
+    max-width: 100%;
   }
 
   .magazine .card .magazine-feature {
