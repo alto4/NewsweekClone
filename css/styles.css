@@ -73,6 +73,11 @@ body {
   border: none;
 }
 
+#btn-hamburger {
+  color: #333;
+  display: none;
+}
+
 .section-title {
   color: #888;
   font-size: 0.9rem;
@@ -191,20 +196,35 @@ body {
     width: 65px;
     margin-top: 1rem;
   }
+
+  .weather,
+  .date {
+    display: none;
+  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 740px) {
   #right-column {
     display: none;
   }
 
-  .more-stories .card {
+  .navbar-top .more-stories .card {
     width: 100vw;
     box-sizing: border-box;
   }
 
   .more-stories {
     display: none;
+  }
+
+  .header-buttons .btn-login,
+  .header-buttons .btn-subscribe {
+    display: none;
+  }
+
+  #btn-hamburger {
+    padding-top: 1rem;
+    display: block;
   }
 
   .section-title {

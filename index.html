@@ -16,61 +16,70 @@
     <!-- Navigation Bar -->
     <header class="py-0 px-2 main-header">
       <div class="row d-flex justify-content-between align-items-end">
-        <div class="col-4">
+        <div class="col-4-md">
           <div class="weather">
             <i class="fa fa-cloud fa-lg"></i>10 &deg; Toronto, CA &gt;
           </div>
           <div class="date">Thu, May 14, 2020</div>
         </div>
-        <div class="col-4">
+        <div class="col-6 col-lg-4">
           <img src="images/logo.png" class="logo" alt="Newsweek logo." />
         </div>
-        <div class="col-4 d-flex justify-content-end pb-3">
+        <div class="header-buttons d-flex justify-content-end pb-3">
           <button class="btn btn-login text-white bold uppercase px-4 py-0">Login</button>
-          <button class="btn btn-outline-light btn-red bold uppercase px-2 py-0">Subscribe &gt;</button>
+          <button class="btn btn-subscribe btn-outline-light btn-red bold uppercase px-2 py-0">Subscribe</button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="btn-hamburger"><i class="fa fa-bars"></i></span>
+          </button>
         </div>
       </div>
     </header>
 
-    <ul class="navbar border-bottom row d-flex justify-content-between align-items-center">
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">U.S.</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">World</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">Business</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">Tech & Science</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">Culture</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">Newsgeek</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">Sports</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">Health</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">The Debate</a>
-      </li>
-      <li class="nav-item border-right">
-        <a href="#" class="nav-link">Vantage</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Weather</a>
-      </li>
-      <li class="searchbar d-flex">
-        <input class="form-control" type="search" placeholder="Search" />
-        <i class="fa fa-search fa-lg"></i>
-      </li>
-    </ul>
+
+    <nav class="navbar navbar-expand-md">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar border-bottom row d-flex justify-content-between align-items-center">
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">U.S.</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">World</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">Business</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">Tech & Science</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">Culture</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">Newsgeek</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">Sports</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">Health</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">The Debate</a>
+          </li>
+          <li class="nav-item border-right">
+            <a href="#" class="nav-link">Vantage</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Weather</a>
+          </li>
+          <li class="searchbar d-flex">
+            <input class="form-control" type="search" placeholder="Search" />
+            <i class="fa fa-search fa-lg"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
   <div class="container-fluid">
     <main>
@@ -931,7 +940,8 @@
 
       <!-- Magazine Section -->
       <section class="magazine">
-        <h2 class="section-title-lg px-2 pt-3 pb-0 text-center"><img src="images/icon.png" class="newsweek-icon">In the
+        <h2 class="section-title-lg px-2 pt-3 pb-0 text-center"><img src="images/icon.png" class="newsweek-icon">In
+          the
           Magazine</h2>
         <div class="row">
           <div class="card col-md-3 px-2">
@@ -1109,7 +1119,8 @@
                 Biden Among Those Who Sought to Unmask Michael Flynn, Intel Chief Says
               </h5>
               <p class="card-text">
-                The revelations were made public thanks to documents that were declassified Wednesday by acting Director
+                The revelations were made public thanks to documents that were declassified Wednesday by acting
+                Director
                 of National Intelligence Richard Grenell at the request of Republican senators.
               </p>
             </div>
@@ -1133,7 +1144,8 @@
                 Trump Won't Treat U.K. Fairly During Trade Deal Negotiations: Poll
               </h5>
               <p class="card-text">
-                In a poll for Newsweek, a majority of Britons said they do not think the Trump Administration will treat
+                In a poll for Newsweek, a majority of Britons said they do not think the Trump Administration will
+                treat
                 the U.K. "fairly and respectfully" in trade negotiations.
               </p>
             </div>
