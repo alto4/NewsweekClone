@@ -40,11 +40,42 @@ body {
   justify-content: center;
 }
 
-.btn-red {
+.btn-white {
   color: #ff0500;
   background-color: #fff;
-  padding: 0.3rem 0;
+  text-transform: uppercase;
+  padding: .2rem .3rem;
+  font-weight: 700;
+  border-radius: 0;
 }
+
+.btn-red {
+  color: #fff;
+  background-color: #ff0500;
+  padding: .2rem .3rem;
+  text-transform: uppercase;
+  border-radius: none;
+  font-weight: 700;
+  border-radius: 0;
+}
+
+.image-container {
+  position: relative;
+}
+
+.btn-category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ff0500;
+  background-color: #eee;
+  text-transform: uppercase;
+  padding: .2rem .6rem;
+  font-weight: 700;
+  border-radius: 0;
+}
+
+
 .weather,
 .date {
   color: #fff;
@@ -100,7 +131,48 @@ body {
   font-weight: 700;
 }
 
-.debate-square-img,
+#right-column .row {
+  margin-right: 1rem;
+}
+
+.debate {
+  border-bottom: 4px solid blue;
+  margin-top: -450px;
+  margin-right: 1rem;
+}
+
+.debate .section-title {
+  border-bottom: 4px solid red;
+}
+
+.debate .card {
+  border: none;
+}
+
+.debate .card img {
+  width: 75px;
+  height: 75px;
+}
+
+.opinion .card,
+.latest-news .card {
+  margin-right: 1rem;
+}
+
+.versus {
+  display: block;
+  text-align: center;
+}
+
+.vs {
+  padding: .5rem;
+  background-color: #000;
+  color: #999;
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+}
+
 .latest-news-img {
   width: 95px;
   height: 95px;
@@ -124,6 +196,32 @@ body {
 .more-stories img {
   height: 85px;
   width: 85px;
+}
+
+
+.section-title-lg {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+  color: #444;
+}
+
+.magazine .card,
+.editors-pick .card {
+  border: none;
+}
+
+.magazine .card img {
+  height: 70%;
+}
+
+.magazine .card .magazine-feature {
+  height: 100%;
+}
+
+.editors-pick {
+  border-bottom: 1px solid #ccc;
 }
 
 .footer img {
@@ -162,12 +260,22 @@ body {
 .opinion .card-title {
   padding: 0.5rem 0 0;
 }
+
 .opinion .card-text {
   padding: 0.5rem 0;
   font-size: 0.9rem;
 }
+
 .bold {
   font-weight: 700;
+}
+
+.footer-top,
+.footer-top .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
 }
 
 .social-link,
@@ -200,6 +308,22 @@ body {
   .weather,
   .date {
     display: none;
+  }
+
+  .debate {
+    margin-top: 0;
+  }
+
+  .magazine .card img {
+    height: 40%;
+  }
+
+  .magazine .card .magazine-feature {
+    height: 70%;
+  }
+
+  .magazine .card button {
+    font-size: .8rem;
   }
 }
 
@@ -234,5 +358,31 @@ body {
 
   .right-column {
     display: none;
+  }
+
+  section {
+    padding: 0 1rem;
+  }
+
+  .latest-news img,
+  .culture img,
+  .magazine .card img {
+    height: 70%;
+  }
+
+  .magazine .card .magazine-feature {
+    height: 100%;
+  }
+
+  .footer-top,
+  .footer-top .left {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-top .right {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 }

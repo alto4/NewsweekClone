@@ -27,7 +27,7 @@
         </div>
         <div class="header-buttons d-flex justify-content-end pb-3">
           <button class="btn btn-login text-white bold uppercase px-4 py-0">Login</button>
-          <button class="btn btn-subscribe btn-outline-light btn-red bold uppercase px-2 py-0">Subscribe</button>
+          <button class="btn btn-subscribe btn-outline-light btn-white bold uppercase px-2 py-0">Subscribe</button>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" id="btn-hamburger"><i class="fa fa-bars"></i></span>
@@ -86,9 +86,12 @@
       <div class="row center">
         <!-- Featured Stories Section -->
         <section class="col-md-5 col-lg featured-stories">
-          <h2 class="section-title px-2 pt-3 pb-0">Featured Stories</h2>
-          <div class="card p-2 pl-3">
-            <img src="images/china-covid-lawsuits.webp" alt="" class="card-img-top" />
+          <h2 class="section-title px-3 pt-3 pb-0">Featured Stories</h2>
+          <div class="card p-2 p-3">
+            <div class="image-container">
+              <img src="images/china-covid-lawsuits.webp" alt="" class="card-img-top" />
+              <button class="btn btn-category">World</button>
+            </div>
             <div class="card-body px-0 py-1">
               <h5 class="card-title">
                 Chinese Media Predicts Retaliation Against GOP Lawmakers Who
@@ -664,15 +667,58 @@
 
         <!-- Right Column -->
         <div class="col-lg col-md-8 m-auto p-0 pl-3" id="right-column">
+
+          <!-- Debate Section -->
+          <section class="debate">
+            <h2 class="section-title px-2 pt-3 pb-3">The Debate</h2>
+            <div class="card border-top-danger">
+              <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/jody-hice.webp" class="card-img  debate-square-img" alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body card p-0">
+                    <h5 class="card-title">
+                      The Unraveling of the Deep State's Coup Against
+                      President Trump
+                    </h5>
+                    <span class="author bold uppercase">By Jodi Hice</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="versus">
+              <hr class="versus-rule">
+                <span class="vs">VS</span>
+              <hr class="versus-rule">
+            </div>
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col">
+                  <div class="card-body p-0">
+                    <h5 class="card-title">
+                      President Trump Has Weaponized the Justice Department
+                    </h5>
+                    <span class="author bold uppercase">By Stephen Swalwell</span>
+                  </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="images/swalwell2.webp" class="card-img py-1 debate-square-img" alt="..." />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Opinion Secion -->
           <section class="opinion">
             <h2 class="section-title px-2 pt-3 pb-0">Opinion</h2>
-            <div class="card p-0">
+            <div class="card p-2">
               <div class="row no-gutters">
                 <div class="col-md-3 d-flex align-items-center justify-content-center">
                   <img src="images/nathan-lewin.webp" class="card-img author-img" alt="..." />
                 </div>
                 <div class="col">
-                  <div class="card-body p-1 pr-2">
+                  <div class="card-body p-1 px-2">
                     <h5 class="card-title">
                       Did the Supreme Court Forget How It Curtailed Religious
                       Freedom?
@@ -682,26 +728,27 @@
                 </div>
               </div>
             </div>
-            <div class="card p-0">
+            <div class="card p-2">
               <div class="row no-gutters">
                 <div class="col-md-3 d-flex align-items-center justify-content-center">
                   <img src="images/chip-roy.webp" class="card-img author-img" alt="..." />
                 </div>
                 <div class="col">
-                  <div class="card-body p-1 pr-2">
+                  <div class="card-body p-1 px-2">
                     <h5 class="card-title p-0">Let America Open</h5>
                     <p class="card-text author">By Chip Roy</p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="card p-0">
+              <div class="card p-2">
                 <div class="row no-gutters">
                   <div class="col-md-3 d-flex align-items-center justify-content-center">
                     <img src="images/marco-rubio.webp" class="card-img author-img" alt="..." />
                   </div>
                   <div class="col">
-                    <div class="card-body p-1 pr-2">
+                    <div class="card-body p-1 px-2">
                       <h5 class="card-title pt-0">
                         Rename the Chinese Embassy Street After the Coronavirus
                         Whistleblower
@@ -711,14 +758,14 @@
                   </div>
                 </div>
               </div>
-              <div class="card p-0">
+              <div class="card p-2">
                 <div class="row no-gutters">
                   <div class="col-md-3 d-flex align-items-center justify-content-center">
                     <img src="images/john-yoo-robert-delahunty.webp" class="card-img author-img" alt="..." />
                   </div>
                   <div class="col">
-                    <div class="card-body p-1 pr-2">
-                      <h5 class="card-title pr-2">
+                    <div class="card-body p-1 px-2">
+                      <h5 class="card-title p-0">
                         The World Health Organization Is Not Salvageable
                       </h5>
                       <p class="card-text author">
@@ -728,65 +775,7 @@
                   </div>
                 </div>
               </div>
-          </section>
-
-          <!-- Debate Section -->
-          <section class="debate">
-            <h2 class="section-title px-2 pt-3 pb-0">The Debate</h2>
-            <div class="card border-top-danger">
-              <div class="row no-gutters">
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                  <img src="images/james-comey.webp" class="card-img  debate-square-img" alt="..." />
-                </div>
-                <div class="col">
-                  <div class="card-body d-flex card p-0  p">
-                    <h5 class="card-title">
-                      The Unraveling of the Deep State's Coup Against
-                      President Trump
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card p-2 pr-3">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="card-body px-1">
-                    <p class="card-text author">By Jodi Hice</p>
-                  </div>
-                </div>
-                <div class="col-md-3 d-flex align-items-center justify-content-center">
-                  <img src="images/jody-hice.webp" class="card-img author-img" alt="..." />
-                </div>
-              </div>
-            </div>
-            <div class="card border-top-danger">
-              <div class="row no-gutters">
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                  <img src="images/michael-flynn.webp" class="card-img py-1 debate-square-img" alt="..." />
-                </div>
-                <div class="col">
-                  <div class="card-body d-flex p-0">
-                    <h5 class="card-title">
-                      President Trump Has Weaponized the Justice Department
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card p-2 pr-3">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="card-body">
-                    <p class="card-text author">By Eric Swalwell</p>
-                  </div>
-                </div>
-                <div class="col-md-3 d-flex align-items-center justify-content-center">
-                  <img src="images/swalwell2.webp" class="card-img author-img" alt="..." />
-                </div>
-              </div>
-            </div>
-          </section>
+          </section>        
 
           <!-- Latest News Section -->
           <section class="latest-news">
@@ -939,108 +928,108 @@
       </div>
 
       <!-- Magazine Section -->
-      <section class="magazine">
-        <h2 class="section-title-lg px-2 pt-3 pb-0 text-center"><img src="images/icon.png" class="newsweek-icon">In
+      <section class="magazine p-3">
+        <h2 class="section-title-lg px-2 pt-3 pb-3 text-center"><img src="images/icon.png" class="newsweek-icon">In
           the
           Magazine</h2>
         <div class="row">
-          <div class="card col-md-3 px-2">
+          <div class="card col-md-3 px-3">
             <img src="images/magazine-featue.webp" alt="" class="magazine-feature" />
           </div>
-          <div class="card mt-4 col-md-3 px-2">
+          <div class="card mt-4 col-md-3 px-3">
             <img src="images/mag-1.webp" alt="" class="card-img-top" />
-            <div class="card-buttons">
-              <button class="bg-danger btn text-white">Cover</button>
-              <button class="bg-white btn text-bold text-danger">
+            <div class="card-buttons py-2">
+              <button class="btn-red btn">Cover</button>
+              <button class="btn-white btn">
                 Health
               </button>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
               <h5 class="card-title">
                 Would You Let Government Track Your Smartphone To Help U.S.
                 Reopen Sooner?
               </h5>
             </div>
           </div>
-          <div class="card mt-4 col-md-3  px-2">
+          <div class="card mt-4 col-md-3  px-3">
             <img src="images/magazine2.webp" alt="" class="card-img-top" />
-            <div class="card-buttons">
-              <button class="bg-danger btn text-white">Cover</button>
-              <button class="bg-white btn text-bold text-danger">
+            <div class="card-buttons py-2">
+              <button class="btn-red btn">Cover</button>
+              <button class="btn-white btn">
                 Health
               </button>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
               <h5 class="card-title">
                 Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"
               </h5>
             </div>
           </div>
-          <div class="card mt-4 col-md-3 px-2">
+          <div class="card mt-4 col-md-3 px-3">
             <img src="images/mag-4.webp" alt="" class="card-img-top" />
-            <div class="card-buttons">
-              <button class="bg-danger btn text-white">Features</button>
-              <button class="bg-white btn text-bold text-danger">
+            <div class="card-buttons py-2">
+              <button class="btn-red btn">Features</button>
+              <button class="btn-white btn">
                 Health
               </button>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
               <h5 class="card-title">
                 Why the U.S. Economy May Never Be the Same Again After Coronavirus
               </h5>
             </div>
           </div>
-          <div class="card mt-4 col-md-3 px-2">
+          <div class="card mt-4 col-md-3 px-3">
             <img src="images/mag-5.webp" alt="" class="card-img-top" />
-            <div class="card-buttons">
-              <button class="bg-danger btn text-white">Periscope</button>
-              <button class="bg-white btn text-bold text-danger">
+            <div class="card-buttons py-2">
+              <button class="btn-red btn">Periscope</button>
+              <button class="btn-white btn">
                 Culture
               </button>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
               <h5 class="card-title">
                 Stimulus Check Isn't Enough? Here Are Five Ways to Come Up With Extra Cash
               </h5>
             </div>
           </div>
-          <div class="card mt-4 col-md-3 px-2">
+          <div class="card mt-4 col-md-3 px-3">
             <img src="images/mag-6.webp" alt="" class="card-img-top" />
-            <div class="card-buttons">
-              <button class="bg-danger btn text-white">Horizons</button>
-              <button class="bg-white btn text-bold text-danger">
+            <div class="card-buttons py-2">
+              <button class="btn-red btn">Horizons</button>
+              <button class="btn-white btn">
                 Culture
               </button>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
               <h5 class="card-title">
                 Bestselling Author Judith Warner on How Parents Screw Up Middle Schoolers
               </h5>
             </div>
           </div>
-          <div class="card mt-4 col-md-3 px-2">
+          <div class="card mt-4 col-md-3 px-3">
             <img src="images/mag-7.webp" alt="" class="card-img-top" />
-            <div class="card-buttons">
-              <button class="bg-danger btn text-white">Downtime</button>
-              <button class="bg-white btn text-bold text-danger">
+            <div class="card-buttons py-2">
+              <button class="btn-red btn">Downtime</button>
+              <button class="btn-white btn">
                 Culture
               </button>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
               <h5 class="card-title">
                 With 'Big Summer,' Jennifer Weiner is Still the Queen of the Summer Read
               </h5>
             </div>
           </div>
-          <div class="card mt-4 col-md-3 px-2">
+          <div class="card mt-4 col-md-3 px-3">
             <img src="images/mag-8.JPG" alt="" class="card-img-top" />
-            <div class="card-buttons">
-              <button class="bg-danger btn text-white">In Focus</button>
-              <button class="bg-white btn text-bold text-danger">
+            <div class="card-buttons py-2">
+              <button class="btn-red btn">In Focus</button>
+              <button class="btn-white btn">
                 Tech
               </button>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
               <h5 class="card-title">
                 Amazon, Netflix and Facebook Market Caps Have Surged in Pandemic Crisis
               </h5>
@@ -1049,15 +1038,15 @@
       </section>
 
       <!-- Editor's Pick Section -->
-      <section class="editors-pick">
-        <h2 class="section-title-lg px-2 pt-3 pb-0 text-center"><img src="images/icon.png"
+      <section class="editors-pick p-3">
+        <h2 class="section-title-lg px-2 pt-3 pb-3 text-center"><img src="images/icon.png"
             class="newsweek-icon">Editor's
           Pick</h2>
         <div class="row">
-          <div class="card col-md-6 col-lg-3 px-2">
+          <div class="card col-md-6 col-lg-3 px-3">
             <img src="images/ep-1.webp" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div class="card-body p-0">
+              <h5 class="card-title pt-2">
                 New Worm Species With Glamorous Iridescent Scales Discovered in Ocean Abyss
               </h5>
               <p class="card-text">
@@ -1065,10 +1054,10 @@
                 reminiscent of the King of Rock's famous sequinned suits. </p>
             </div>
           </div>
-          <div class="card col-md-6 col-lg-3 px-2">
+          <div class="card col-md-6 col-lg-3 px-3">
             <img src="images/ep-2.webp" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div class="card-body p-0">
+              <h5 class="card-title pt-2">
                 COVID-19 Pandemic Could Cause Spike in Psychosis Cases, Scientists Warn
               </h5>
               <p class="card-text">
@@ -1077,10 +1066,10 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-6 col-lg-3 px-2">
+          <div class="card col-md-6 col-lg-3 px-3">
             <img src="images/ep-3.webp" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div class="card-body p-0">
+              <h5 class="card-title pt-2">
                 The U.K. COVID-19 response is stuck between a furlough and a hard place
               </h5>
               <p class="card-text">
@@ -1089,10 +1078,10 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-6 col-lg-3 px-2">
+          <div class="card col-md-6 col-lg-3 px-3">
             <img src="images/ep-4.webp" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div class="card-body p-0">
+              <h5 class="card-title pt-2">
                 The Anti-vaxxers Are Winning the Battle on Facebook
               </h5>
               <p class="card-text">
@@ -1101,10 +1090,10 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-6 col-lg-3 px-2">
+          <div class="card col-md-6 col-lg-3 px-3">
             <img src="images/ep-5.webp" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div class="card-body p-0">
+              <h5 class="card-title pt-2">
                 HEROES Act Would Protect Immigrant Essential Workers From Deportation
               </h5>
               <p class="card-text">
@@ -1112,10 +1101,10 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-6 col-lg-3 px-2">
+          <div class="card col-md-6 col-lg-3 px-3">
             <img src="images/ep-6.webp" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div class="card-body p-0">
+              <h5 class="card-title pt-2">
                 Biden Among Those Who Sought to Unmask Michael Flynn, Intel Chief Says
               </h5>
               <p class="card-text">
@@ -1125,9 +1114,9 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-6 col-lg-3 px-2">
+          <div class="card col-md-6 col-lg-3 px-3">
             <img src="images/ep-7.webp" alt="" class="card-img-top" />
-            <div class="card-body">
+            <div class="card-body p-0">
               <h5 class="card-title">
                 COVID-19 Test, Used on White House Staff, Produces False Negatives: Study
               </h5>
@@ -1137,10 +1126,10 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-6 col-lg-3 px-2">
+          <div class="card col-md-6 col-lg-3 px-3">
             <img src="images/ep-8.webp" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div class="card-body p-0">
+              <h5 class="card-title pt-2">
                 Trump Won't Treat U.K. Fairly During Trade Deal Negotiations: Poll
               </h5>
               <p class="card-text">
@@ -1156,13 +1145,13 @@
 
     <!-- Footer  -->
     <footer class="footer">
-      <div class="footer-top d-flex justify-content-between">
+      <div class="footer-top">
         <div class="left ">
           <img src="images/logo-red.png" alt="">
-          <span>&copy; 2020 NEWSWEEK</span>
+          <p class="pt-3">&copy; 2020 NEWSWEEK</p>
         </div>
 
-        <ul class="social-media-links d-flex">
+        <ul class="social-media-links right d-flex">
           <li class="social-link"><i class="fa fa-facebook fa-lg"></i></li>
           <li class="social-link"><i class="fa fa-twitter fa-lg"></i></li>
           <li class="social-link"><i class="fa fa-instagram fa-lg"></i></li>
@@ -1180,7 +1169,7 @@
           <li>Polska</li>
           <li>Romania</li>
         </ul>
-        <ul class="footer-nav-links pb-4 d-flex">
+        <ul class="footer-nav-links pb-4 d-flex flex-wrap">
           <li>About Us</li>
           <li>Corrections</li>
           <li>Contact Us</li>
